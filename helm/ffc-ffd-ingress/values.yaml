@@ -1,11 +1,11 @@
 environment: development
 name: ffc-ffd-ingress
-namespace: ffc-grants
-workstream: ffc-grants
+namespace: ffc-ffd
+workstream: ffc-ffd
 
 labels: {}
 
 ingress:
   class: nginx
-  endpoint: ffc-grants-frontend
+  endpoint: ffc-ffd
   server: example.com
