@@ -1,9 +1,3 @@
 {{- include "ffc-helm-library.azure-ingress-master" (list . "ffc-ffd-ingress.ingress") -}}
 {{- define "ffc-ffd-ingress.ingress" -}}
-metadata:
-  annotations:
-    nginx.ingress.kubernetes.io/server-snippet: |
-      location / {
-        return 301 https://{{ .Values.workstream }}.{{ .Values.ingress.server }}{{ .Values.ingress.defaultPath }}$request_uri;
-      }
 {{- end -}}
