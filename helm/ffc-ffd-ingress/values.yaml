@@ -9,4 +9,4 @@ ingress:
   class: nginx
   endpoint: ffc-ffd
   server: example.com
-  defaultPath: /landing-page
+  defaultPath: landing-page
